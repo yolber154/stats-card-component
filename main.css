@@ -25,11 +25,12 @@ body{
 
 h1{
     font-family: Inter, sans-serif;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 2rem;
 }
 
-.conteiner{
+.container{
     width: 100%;
     max-width: 1000px;
     background-color: hsl(244, 38%, 16%);
@@ -95,7 +96,7 @@ h1{
 
 @media(max-width: 500px){
     body{justify-content: flex-start;}
-    .conteiner{flex-direction: column;}
+    .container{flex-direction: column;}
     .item-flex{width: 100% !important;}
     .item-flex:first-child{order: 1;}
     .image{height: 498px;}
