@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    font-size: 15px;
+    font-family: Inter;
+    line-height: 1.6;
+    color: white;
+}
+
+body{
+    height: 100%;
+    background-color: hsl(233, 47%, 7%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: Inter, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 1000px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: .3333rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.item-flex{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.item-flex:first-child{
+    width: 47.5%;
+    padding: 3.4rem;
+    margin-right: 2.5%;
+}
+
+.accent{color: hsl(277, 64%, 61%);}
+
+.item-flex p{ color: hsla(0, 0%, 100%, 0.6);}
+
+.items{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{ margin-right: 2.6666666rem;}
+
+.box p{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.image{
+    background-image: url("images/image-header-desktop.jpg");
+    background-color: hsl(281.1, 88.8%, 72%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+@media(max-width: 850px){
+    html{font-size: 13px;}
+}
+
+@media(max-width: 720px){
+    html{font-size: 12px;}
+    .item-flex:first-child{
+        margin-right: 0;
+        padding: 2rem;
+    }
+    .items{margin-top: 1.5rem;}
+    .item-flex:first-child{width: 55%;}
+    .image{width: 45%;}
+    .box{margin-right: 1.7rem;}
+}
+
+@media(max-width: 500px){
+    body{justify-content: flex-start;}
+    .conteiner{flex-direction: column;}
+    .item-flex{width: 100% !important;}
+    .item-flex:first-child{order: 1;}
+    .image{height: 498px;}
+    .attribution{padding-bottom: 2rem;}
+    .image{height: 338px;}
+}
+
+@media(max-width: 375px){
+    .image{height: 258px;}
+    .item-flex{text-align: center; margin: 0 !important}
+    .items{flex-direction: column;}
+    .box{margin: 0 0 2rem 0}
+}
